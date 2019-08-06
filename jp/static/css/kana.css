@@ -1,0 +1,38 @@
+.small{
+ position:relative;
+ width:29px;
+}
+
+.small:hover + div {
+ opacity:1.0;
+ z-index:1;
+}
+
+.small:hover + .anim img{
+ display:inline;
+}
+
+div.anim{
+ position:absolute;
+ opacity:0;
+ border-style:solid;
+ border-width:2px;
+ z-index:0;
+ width:160px;
+ height:160px;
+}
+
+.anim img{
+ display:none;
+}
+
+.tables {
+ float:left;
+}
+
+#large-display-image {
+ position:relative;
+ float:left;
+ left:150px;
+}
+

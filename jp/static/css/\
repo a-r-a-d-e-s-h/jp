@@ -1,0 +1,21 @@
+body {
+    background-color:aliceblue;
+    margin:0;
+}
+.main {
+    background-color:lightblue;
+    width:1200px;
+    max-width:80%;
+    min-width:800px;
+    padding:8px;
+    margin:auto;
+    text-align:center;
+}
+
+h1 {
+    text-align:center;
+}
+
+.form {
+    margin:auto;
+}

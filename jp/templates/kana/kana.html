@@ -1,0 +1,56 @@
+{% extends "base/generic.html" %}
+
+{% block scripts %}
+{% load static %}
+<script src={% static 'js/kana.js' %}></script>
+{% endblock %}
+
+{%block extracss %}
+<link rel="stylesheet" href={% static 'css/kana.css' %}/>
+{% endblock %}
+
+{% block content %}
+
+<h1>Kana // 仮名</h1>
+
+<div class="tables">
+<table class="hiragana table">
+<tr>
+<td>wa</td> <td>ra</td> <td>ya</td> <td>ma</td> <td>ha</td> <td>na</td> <td>ta</td> <td>sa</td> <td>ka</td> <td>a</td>
+</tr>
+<tr>
+<td></td> <td>ri</td> <td></td> <td>mi</td> <td>hi</td> <td>ni</td> <td>chi</td> <td>shi</td> <td>ki</td> <td>i</td>
+</tr>
+<tr>
+<td>n</td> <td>ru</td> <td>yu</td> <td>mu</td> <td>fu</td> <td>nu</td> <td>tsu</td> <td>su</td> <td>ku</td> <td>u</td>
+</tr>
+<tr>
+<td></td> <td>re</td> <td></td> <td>me</td> <td>he</td> <td>ne</td> <td>te</td> <td>se</td> <td>ke</td> <td>e</td>
+</tr>
+<tr>
+<td>wo</td> <td>ro</td> <td>yo</td> <td>mo</td> <td>ho</td> <td>no</td> <td>to</td> <td>so</td> <td>ko</td> <td>o</td>
+</tr>
+</table>
+
+<table class="katakana table">
+<tr>
+<td>wa</td> <td>ra</td> <td>ya</td> <td>ma</td> <td>ha</td> <td>na</td> <td>ta</td> <td>sa</td> <td>ka</td> <td>a</td>
+</tr>
+<tr>
+<td></td> <td>ri</td> <td></td> <td>mi</td> <td>hi</td> <td>ni</td> <td>chi</td> <td>shi</td> <td>ki</td> <td>i</td>
+</tr>
+<tr>
+<td>n</td> <td>ru</td> <td>yu</td> <td>mu</td> <td>fu</td> <td>nu</td> <td>tsu</td> <td>su</td> <td>ku</td> <td>u</td>
+</tr>
+<tr>
+<td></td> <td>re</td> <td></td> <td>me</td> <td>he</td> <td>ne</td> <td>te</td> <td>se</td> <td>ke</td> <td>e</td>
+</tr>
+<tr>
+<td>wo</td> <td>ro</td> <td>yo</td> <td>mo</td> <td>ho</td> <td>no</td> <td>to</td> <td>so</td> <td>ko</td> <td>o</td>
+</tr>
+</table>
+</div>
+
+<div id="large-display"><img id="large-display-image"></img></div>
+
+{% endblock %}
