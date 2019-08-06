@@ -1,0 +1,29 @@
+{% extends "base/generic.html" %}
+
+{% block scripts %}
+{% load static %}
+<script src="{% static 'js/viewer.js' %}"></script>
+{% endblock %}
+
+{% block extracss %}
+<link rel="stylesheet" href="{% static 'css/viewer.css' %}"/>
+{% endblock %}
+
+{% block content %}
+<h1>Kanji Viewer</h1>
+<div id="character-view"></div>
+
+<div class="form">
+<form method="post" id="update-form" action="/kanji/touch_character">
+    {% csrf_token %}
+    <table>
+        <tr>
+            <td>Enter Character:</td>
+            <td><input type="text" name="char"/></td>
+        </tr>
+    </table>
+    <input type="submit" style="visibility:hidden" name="submit" value="Submit+Query"/>
+</form>
+</div>
+
+{% endblock %}
